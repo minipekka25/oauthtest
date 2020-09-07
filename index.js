@@ -17,7 +17,8 @@ app.use(
     cookieSession({
         maxAge:30 * 24 * 60 * 60 *1000,
         keys:[keys.cookieKey],
-        domain:'http://localhost:3000'
+        domain:'http://localhost:3000',
+        sameSite:'lax'
     })
 )
 
