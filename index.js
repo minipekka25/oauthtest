@@ -254,7 +254,7 @@ app.get('/google', passport.authenticate('google', { scope: ['profile', 'email']
 app.get('/google/callback', passport.authenticate('google', { failureRedirect: '/failed' }),
     function (req, res) {
         // Successful authentication, redirect home.
-        res.redirect('http://localhost:3000/orgexplorer');
+        res.redirect('/orgexplorer');
     }
 );
 
