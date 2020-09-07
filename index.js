@@ -154,6 +154,15 @@ rooms.on('connection', async (socket) => {
             await founduser.save()
         })
 
+<<<<<<< HEAD
+=======
+app.use(
+    cookieSession({
+        maxAge:30 * 24 * 60 * 60 *1000,
+        keys:[keys.cookieKey],
+        domain:'http://localhost:3000',
+        sameSite:'lax'
+>>>>>>> 28d76ea6ebc73c66639ebd105915ed2654877787
     })
 
 
@@ -862,6 +871,12 @@ app.get('/logout', (req, res) => {
     res.redirect('/');
 })
 
+<<<<<<< HEAD
 //app.listen(4000, ()=> console.log('app running in port 4000'))
 const port = process.env.PORT || 5000
 server.listen(port, () => console.log(`Example app listening on port ${5000}!`))
+=======
+app.listen(PORT,()=>{
+    console.log("server running on "+ PORT)
+})
+>>>>>>> 28d76ea6ebc73c66639ebd105915ed2654877787

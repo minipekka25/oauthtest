@@ -9,7 +9,7 @@ app.get('/auth/facebook',
   passport.authenticate('facebook'));
 
 app.get("/auth/google/callback",passport.authenticate('google'),(req,res)=>{
-    res.redirect('/profile')
+    res.redirect('http://localhost:3000/orgexplorer')
 })
 app.get("/auth/facebook/callback",passport.authenticate('facebook',{
     successRedirect:'/profile'
