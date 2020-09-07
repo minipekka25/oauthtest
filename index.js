@@ -161,7 +161,7 @@ app.use(
         keys:[keys.cookieKey],
         domain:'http://localhost:3000',
         sameSite:'lax'
-    })
+    }))
 
 
     socket.on('sendmsgtoroom', async (roomid) => {
